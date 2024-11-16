@@ -14,7 +14,7 @@
 > 3. [Stash](https://github.com/zuluion/Stash-Template-Config)
 > 4. [Surfboad](https://github.com/zuluion/Surfboard-Template-Config)
 
-# 配置文件
+## 配置文件
 1. [Clash Template Config](https://cdn.jsdelivr.net/gh/zuluion/ProxySoftware-Template-Config@master/Config/Clash/Clash-Template-Config.yml)
 2. [ShadowRocket Template Config](https://cdn.jsdelivr.net/gh/zuluion/ProxySoftware-Template-Config@master/Config/ShadowRocket/ShadowRocket-Template-Config.conf)
 3. [Stash Template Config](https://cdn.jsdelivr.net/gh/zuluion/ProxySoftware-Template-Config@master/Config/Stash/Stash-Template-Config.yaml)
@@ -23,7 +23,7 @@
 > 不再支持CFA，如有需要请移步旧项目 [Clash-Template-Config](https://github.com/zuluion/Clash-Template-Config)
 > 强烈建议使用其他基于 [Mihomo](https://github.com/MetaCubeX/mihomo) 构建的项目，以支持更多特性
 
-# App Filter Rule
+## App Filter Rule
 > 应用分流规则
 
 | AppName        | .yaml                                                                                                                     | .list                                                                                                                         |
@@ -73,6 +73,10 @@
 > 2. IDM 并不支持BT和磁力链接，因此单独区分开，并设置相应的策略组，默认走直连，也可以前端手动改成走国内流量
 > 3. 支持WARP配置，默认禁用，需要自写WARP节点配置，示例模板在 [provider-warp](https://cdn.jsdelivr.net/gh/zuluion/ProxySoftware-Template-Config@master/Init-Config/provider-warp.yml)
 > 4. 支持localproxy配置，用于配置局域网的socks代理，勉强实现不同网络环境下的自动切换，默认禁用，示例模板在 [provider-local](https://cdn.jsdelivr.net/gh/zuluion/ProxySoftware-Template-Config@master/Init-Config/provider-local.yml)
+
+
+## Links
+1. [blackmatrix7/ios_rule_script: 分流规则、重写写规则及脚本。](https://github.com/blackmatrix7/ios_rule_script)
 
 
 ## Star history
