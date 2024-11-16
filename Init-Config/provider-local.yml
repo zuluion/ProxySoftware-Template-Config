@@ -1,0 +1,10 @@
+proxies:
+  -
+    name: '192.168.31.1'
+    type: socks5
+    server: 192.168.31.1
+    port: 7890
+    username: username
+    password: password
+    udp: true
+  
