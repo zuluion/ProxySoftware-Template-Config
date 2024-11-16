@@ -93,5 +93,5 @@
 ## Contributors
 
 <a href="https://github.com/zuluion/ProxySoftware-Template-Config/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=zuluion/ProxySoftware-Template-Config" width="100%"/>
+  <img src="https://contrib.rocks/image?repo=zuluion/ProxySoftware-Template-Config" width="200"/>
 </a>
