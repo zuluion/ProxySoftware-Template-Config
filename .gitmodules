@@ -1,0 +1,3 @@
+[submodule "Icon/Qure"]
+	path = Icon/Qure
+	url = https://github.com/zuluion/Qure.git
