@@ -23,6 +23,8 @@
 > 不再支持CFA，如有需要请移步旧项目 [Clash-Template-Config](https://github.com/zuluion/Clash-Template-Config)
 > 强烈建议使用其他基于 [Mihomo](https://github.com/MetaCubeX/mihomo) 构建的项目，以支持更多特性
 
+> Stash的机场链接，如果使用了内置的substore，可以时使用 http://sub.store/download/将这里的汉字修改成本地Sub-Store的订阅名称
+
 ## App Filter Rule
 > 应用分流规则
 
