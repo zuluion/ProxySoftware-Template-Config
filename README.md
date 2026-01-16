@@ -79,6 +79,8 @@
 > 2. IDM 并不支持BT和磁力链接，因此单独区分开，并设置相应的策略组，默认走直连，也可以前端手动改成走国内流量
 > 3. 支持WARP配置，默认禁用，需要自写WARP节点配置，示例模板在 [provider-warp](https://cdn.jsdelivr.net/gh/zuluion/ProxySoftware-Template-Config@master/Init-Config/provider-warp.yml)
 > 4. 支持localproxy配置，用于配置局域网的socks代理，勉强实现不同网络环境下的自动切换，默认禁用，示例模板在 [provider-local](https://cdn.jsdelivr.net/gh/zuluion/ProxySoftware-Template-Config@master/Init-Config/provider-local.yml)
+> 5. clash 模板 弃用了relay,改成dialer,默认 DIRECT,从proxy-provider中实现对所有节点默认全局提供拨号入口
+> 6. stash 模板 弃用了relay,官方仍然支持此配置
 
 
 ## Links
