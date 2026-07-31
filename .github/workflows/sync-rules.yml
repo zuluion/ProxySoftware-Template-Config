@@ -1,0 +1,48 @@
+name: Sync Rules to Sibling Repositories
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - 'Rule/**'
+  workflow_dispatch:
+
+jobs:
+  sync-rules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+
+      - name: Sync to Clash-Template-Config
+        run: |
+          git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/zuluion/Clash-Template-Config.git repo-clash
+          cp -r Rule/Clash/* repo-clash/Filter/
+          cd repo-clash
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes in Clash-Template-Config"
+          else
+            git commit -m "chore: auto-sync rules from ProxySoftware-Template-Config"
+            git push origin master
+          fi
+
+      - name: Sync to Surfboard-Template-Config
+        run: |
+          git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/zuluion/Surfboard-Template-Config.git repo-surfboard
+          cp -r Rule/Surfboard/* repo-surfboard/Filter/
+          cd repo-surfboard
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes in Surfboard-Template-Config"
+          else
+            git commit -m "chore: auto-sync rules from ProxySoftware-Template-Config"
+            git push origin master
+          fi
